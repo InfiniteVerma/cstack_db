@@ -65,8 +65,10 @@ describe 'database' do
     result = run_script(script)
     expect(result).to match_array([
       "db > String is too long.",
-      "db > Executed.",
+      "db > (0, , )", 
       "db > ",
+      "Executed.",
+      "Executed.",
     ])
   end
 
@@ -79,8 +81,10 @@ describe 'database' do
     result = run_script(script)
     expect(result).to match_array([
       "db > ID must be positive.",
-      "db > Executed.",
+      "db > (0, , )",
       "db > ",
+      "Executed.",
+      "Executed.",
     ])
   end
 
