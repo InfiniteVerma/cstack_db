@@ -1,1 +1,1 @@
-g++ main.c -o db
+gcc main.c -o db
